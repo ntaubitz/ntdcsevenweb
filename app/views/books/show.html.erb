@@ -1,0 +1,14 @@
+<% @site_area = :books %>
+<div class="column width-25">
+  <div class="border-right">
+    <h3>Books</h3>
+    <% @books.each do |book| %>
+      <p>
+        <%= link_to book.title, book %>
+      </p>
+    <% end %>
+  </div>
+</div>
+<div class="column width-75">
+  <h2><%= @book.title %></h2>
+</div>

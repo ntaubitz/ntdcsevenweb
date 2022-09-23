@@ -1,0 +1,15 @@
+<% @site_area = :articles %>
+<div class="column width-25">
+  <div class="border-right">
+  <h3>Technology</h3>
+  <% @articles.each do |article| %>
+    <p>
+      <%= link_to article.subject, article %>
+    </p>
+  <% end %>
+  </div>
+</div>
+<div class="column width-75">
+  <h2><%= @article.subject %></h2>
+  <p><%= @article.body %></p>
+</div>

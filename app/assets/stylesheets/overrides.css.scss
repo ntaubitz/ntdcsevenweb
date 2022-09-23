@@ -1,0 +1,33 @@
+@import 'colors';
+
+
+
+a {
+  @include important-font;
+}
+
+h1 {
+  @include important-font;
+  font-size: 1.5em;
+  color: $primary-grey;
+}
+
+h2 {
+  @include important-font;
+  font-size: 1.3em;
+  color: $primary-grey;
+}
+
+h3 {
+  @include important-font;
+  font-size: 1.2em;
+  color: $primary-grey;
+}
+
+p {
+  @include important-font;
+
+}
+
+
+

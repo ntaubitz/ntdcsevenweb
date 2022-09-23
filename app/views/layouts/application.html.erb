@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ntdcsevenweb</title>
+    <title>Nate Taubitz' Personal Site</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,27 @@
   </head>
 
   <body>
+  <div class="header">
+    <div class="row">
+      <div class="column">
+        <h1>Welcome to Nate Taubitz' Personal Site</h1>
+      </div>
+      <div class="column">
+        <div class="row navigation">
+          <div class="column"><a href="/articles" class="<%= :active if @site_area == :articles %>">Technology</a></div>
+          <div class="column"><a href="/books" class="<%= :active if @site_area == :books %>">Books</a></div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="row">
     <%= yield %>
-  </body>
+  </div>
+
+  <div class="footer">
+    <span>&copy;Copyright 2022</span>
+  </div>
+</body>
 </html>

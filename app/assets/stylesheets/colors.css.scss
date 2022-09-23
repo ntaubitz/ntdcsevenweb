@@ -1,0 +1,10 @@
+$primary-grey: #646f77;
+$primary-light-grey: #e1e4e8;
+$primary-black: #000;
+
+@mixin important-font {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  color: $primary-black;
+}

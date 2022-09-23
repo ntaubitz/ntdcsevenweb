@@ -39,3 +39,5 @@
 Procfile.dev
 log/
 tmp/
+config/database.yml
+
